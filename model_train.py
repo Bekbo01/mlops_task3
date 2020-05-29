@@ -24,7 +24,7 @@ fit_model = model.fit(train_X ,  train_y , epochs = 2 , verbose =  False)
 acc = fit_model.history
 accuracy = acc['accuracy'][1] * 100
 accuracy = int(accuracy)
-f= open("modelaccuracy.txt","w+")
+f= open("accuracy.txt","w+")
 f.write(str(accuracy))
 f.close()
 print(" Model's Accuracy : " , accuracy ,"%")

@@ -20,7 +20,7 @@ def validate(fit_model, epochs):
 	f= open("modelaccuracy.txt","w+")
 	f.write(str(accuracy))
 	f.close()
-	print("  Now after iteration Accuracy : " , accuracy ,"%")
+	print(" Now after iteration Accuracy : " , accuracy ,"%")
 	return accuracy
 (train_X , train_y), (test_X , test_y) = mnist.load_data("mymnist.data")
 test_X = test_X.reshape(-1 , 28*28)
