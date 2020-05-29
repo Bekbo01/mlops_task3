@@ -29,7 +29,7 @@
 
 8. Create One extra job job6 for monitor. If container where app is running fails due to any reason then this job should automatically start the container again from where the last trained model left.
 
-# Task 1 :
+# Step 1 :
 Create container image that has Python3 and Keras or tensorflow installed using Dockerfile.
 - Copy the ***[Dockerfile](https://github.com/sagargarg27/mlops_task3/blob/master/Dockerfile)*** from this repository and paste it into a new directory.
 - Go to that directory and run this command.
@@ -39,7 +39,7 @@ Create container image that has Python3 and Keras or tensorflow installed using 
  - Now we have an image named `mytf:v1`
  - Make sure you have internet connectivity while building this image.
 
- # Task 2 :
+ # Step 2 :
 Create a job chain of job1, job2, job3, job4 and job5 using build pipeline plugin in Jenkins. 
 
 I have created this pipeline :
